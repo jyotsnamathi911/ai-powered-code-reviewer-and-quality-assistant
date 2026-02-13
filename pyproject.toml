@@ -1,0 +1,5 @@
+[tool.ai_code_reviewer]
+style = "google"
+coverage_threshold = 70
+exclude = ["tests", "venv"]
+
