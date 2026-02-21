@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 class DocstringGenerator:
 
@@ -12,17 +12,13 @@ Args:
 """'''
         self.style = style.lower()
 
-    def generate_function_docstring(self, func: Dict) -> str:
-        '''"""Summary of the function.
-
-Args:
-    self: Description of self.
-    func: Description of func.
-
-Returns:
-    str: Description of return value.
-
-"""'''
+    def generate_function_docstring(self, func: Dict, ai_docstring: Optional[str]=None) -> str:
+        """
+        If AI docstring is provided, use it.
+        Otherwise fallback to template generation.
+        """
+        if ai_docstring and ai_docstring.strip():
+            return f'"""\n{ai_docstring.strip()}\n"""'
         if self.style == 'google':
             return self._google_style(func)
         elif self.style == 'numpy':
@@ -105,7 +101,7 @@ Returns:
         for arg in func['args']:
             lines.append(f':param {arg}: Description of {arg}.')
         if func['returns']:
-            lines.append(f':return: Description of return value.')
+            lines.append(':return: Description of return value.')
             lines.append(f":rtype: {func['returns']}")
         lines.append('"""')
         return '\n'.join(lines)

@@ -1,0 +1,36 @@
+file,type,severity,line,message
+demo.py,MissingDocstring,warning,11,Order lacks a docstring.
+demo.py,MissingTypeHint,info,1,a in multiply lacks type hint.
+demo.py,MissingTypeHint,info,1,b in multiply lacks type hint.
+demo.py,MissingTypeHint,info,13,price in calculate_total lacks type hint.
+demo.py,MissingTypeHint,info,13,tax in calculate_total lacks type hint.
+review_test.py,MissingTypeHint,info,1,a in big_function lacks type hint.
+review_test.py,MissingTypeHint,info,1,b in big_function lacks type hint.
+sample.py,MissingDocstring,warning,11,User lacks a docstring.
+sample.py,MissingTypeHint,info,1,a in add lacks type hint.
+sample.py,MissingTypeHint,info,1,b in add lacks type hint.
+ai_code_reviewer\cli\main.py,LongFunction,critical,8,main exceeds 30 lines.
+ai_code_reviewer\config\config_loader.py,MissingDocstring,warning,4,ConfigLoader lacks a docstring.
+ai_code_reviewer\config\config_loader.py,MissingTypeHint,info,6,config_path in __init__ lacks type hint.
+ai_code_reviewer\core\apply.py,MissingDocstring,warning,5,DocstringApplier lacks a docstring.
+ai_code_reviewer\core\apply.py,MissingTypeHint,info,31,style in _apply_to_file lacks type hint.
+ai_code_reviewer\core\apply.py,MissingTypeHint,info,46,style in apply_docstrings lacks type hint.
+ai_code_reviewer\core\apply.py,MissingTypeHint,info,7,style in __init__ lacks type hint.
+ai_code_reviewer\core\apply.py,MissingTypeHint,info,17,node in visit_FunctionDef lacks type hint.
+ai_code_reviewer\core\generator.py,MissingDocstring,warning,3,DocstringGenerator lacks a docstring.
+ai_code_reviewer\core\metrics.py,MissingDocstring,warning,7,MetricsCalculator lacks a docstring.
+ai_code_reviewer\core\metrics.py,MissingTypeHint,info,9,exclude in __init__ lacks type hint.
+ai_code_reviewer\core\metrics.py,MissingTypeHint,info,78,output_path in export_csv lacks type hint.
+ai_code_reviewer\core\metrics.py,MissingTypeHint,info,95,tree in _calculate_complexity lacks type hint.
+ai_code_reviewer\core\parser.py,MissingDocstring,warning,5,CodeParser lacks a docstring.
+ai_code_reviewer\core\reviewer.py,MissingDocstring,warning,4,CodeReviewer lacks a docstring.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,6,exclude in __init__ lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,31,file_path in _is_excluded lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,59,file_path in _review_file lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,73,tree in _check_missing_docstrings lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,73,file_path in _check_missing_docstrings lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,89,tree in _check_long_functions lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,89,file_path in _check_long_functions lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,89,max_lines in _check_long_functions lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,105,tree in _check_missing_type_hints lacks type hint.
+ai_code_reviewer\core\reviewer.py,MissingTypeHint,info,105,file_path in _check_missing_type_hints lacks type hint.
