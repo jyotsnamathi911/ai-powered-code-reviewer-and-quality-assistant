@@ -1,0 +1,53 @@
+PROJECT DOCUMENTATION
+
+Title AI-Powered Code Reviewer and Quality Assistant
+
+Project Statement Modern software development requires consistent and
+efficient code reviews to maintain quality standards. Manual reviews are
+time-consuming and highly dependent on reviewer expertise, often leading
+to inconsistencies in feedback.
+
+This project implements an AI-Powered Code Reviewer and Quality
+Assistant that automatically analyzes Python source code for style
+issues, maintainability concerns, performance risks, and potential
+logical problems. The system combines static analysis using Python’s
+Abstract Syntax Tree (AST) with Large Language Model (LLM)-based
+reasoning to generate actionable and context-aware feedback.
+
+The tool supports both Command-Line Interface (CLI) usage and an
+optional Streamlit-based Web UI for interactive review.
+
+Key Features and Outcomes - CLI tool for automated Python code
+analysis - AST-based extraction of functions, classes, and structure -
+Detection of issues such as: • Missing docstrings • Missing type hints •
+Poor naming conventions • Long or complex functions - Severity-based
+categorization (Info, Warning, Critical) - AI-generated improvement
+suggestions with explanations - Optional web dashboard for structured
+visualization
+
+System Modules
+
+Code Parsing & Analysis - Parses Python files using AST - Extracts
+structural components - Detects rule-based code smells
+
+Rule Engine - Applies quality checks - Assigns severity levels - Ensures
+standardized validation
+
+AI Review Engine - Integrates with an LLM API - Provides contextual
+suggestions and refactoring guidance
+
+Reporting Module - Aggregates findings - Generates severity-based
+summary reports
+
+Interfaces - CLI for command-based execution - Streamlit UI for
+interactive visualization
+
+Workflow Source code input (CLI or UI) AST-based parsing Rule-based
+static analysis Optional AI enhancement Categorized reporting and output
+
+Conclusion The AI-Powered Code Reviewer and Quality Assistant
+demonstrates a hybrid approach to automated code quality assurance by
+combining deterministic static analysis with AI-driven reasoning. The
+system enhances developer productivity, standardizes review quality, and
+reduces manual review effort while maintaining structured and scalable
+design principles.
